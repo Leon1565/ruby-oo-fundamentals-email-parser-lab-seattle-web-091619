@@ -12,6 +12,8 @@ class EmailAddressParser
   
   def parse
     @email_addresses.split(",\s")
+    new_array = []
+    new_array << @email_addresses
   end
 
 email_addresses = "john@doe.com, person@somewhere.org"
