@@ -14,5 +14,10 @@ class EmailAddressParser
     @email_addresses.split(",?\s+")
   end
   
+email_addresses = "john@doe.com, person@somewhere.org"
+parser = EmailAddressParser.new(email_addresses)
+ 
+parser.parse
+  
 end
 
