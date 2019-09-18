@@ -14,7 +14,7 @@ class EmailAddressParser
     @email_addresses.split(",\s")
   end
   
-email_addresses = email_addresses.parse
+email_addresses = @email_addresses
 parser = EmailAddressParser.new(email_addresses)
  
 parser.parse
