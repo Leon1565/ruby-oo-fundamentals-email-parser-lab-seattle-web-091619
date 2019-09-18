@@ -13,8 +13,7 @@ class EmailAddressParser
   def parse
     @email_addresses.split(",\s")
   end
-  
-email_addresses.parse
+
 parser = EmailAddressParser.new(email_addresses)
  
 parser.parse
