@@ -11,10 +11,10 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses.split(",")
+    @email_addresses.split(",?")
   end
   
-email_addresses = "john@doe.com,person@somewhere.org"
+email_addresses = "john@doe.com, person@somewhere.org"
 parser = EmailAddressParser.new(email_addresses)
  
 parser.parse
